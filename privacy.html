@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidade — MCP Pessoal</title>
+<style>
+  :root {
+    --bg: #ffffff; --fg: #1a1a1a; --muted: #5c5c5c;
+    --line: #e4e4e4; --accent: #1a1a1a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #111213; --fg: #e8e8e8; --muted: #9a9a9a; --line: #2a2b2d; --accent: #e8e8e8; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    padding: 0 16px;
+  }
+  main { max-width: 640px; margin: 0 auto; padding: 72px 0 96px; }
+  h1 { font-size: 28px; line-height: 1.25; margin: 0 0 6px; letter-spacing: -0.02em; }
+  .sub { color: var(--muted); margin: 0 0 40px; font-size: 14px; }
+  h2 { font-size: 17px; margin: 36px 0 10px; letter-spacing: -0.01em; }
+  p { margin: 0 0 14px; }
+  ul { margin: 0 0 14px; padding-left: 20px; }
+  li { margin-bottom: 6px; }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  code {
+    font: 13px/1.5 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    background: var(--line); padding: 2px 6px; border-radius: 4px;
+  }
+  .en { margin-top: 56px; padding-top: 24px; border-top: 1px solid var(--line); }
+  footer {
+    margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--line);
+    color: var(--muted); font-size: 14px;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Política de Privacidade</h1>
+  <p class="sub">MCP Pessoal · atualizada em 21 de setembro de 2026</p>
+
+  <h2>Resumo</h2>
+  <p>
+    Este aplicativo é usado por uma única pessoa, o próprio desenvolvedor, na própria conta
+    Google. Ele não coleta dados de terceiros, não tem servidor e não compartilha nada com ninguém.
+  </p>
+
+  <h2>Dados acessados</h2>
+  <p>Com a minha autorização, o aplicativo acessa, na minha conta:</p>
+  <ul>
+    <li>arquivos e documentos do Google Drive</li>
+    <li>mensagens do Gmail</li>
+    <li>eventos do Google Agenda</li>
+  </ul>
+
+  <h2>Como são usados</h2>
+  <p>
+    Os dados são lidos sob demanda, durante uma sessão de trabalho, e exibidos na minha própria
+    tela. São usados apenas para as tarefas que eu peço: localizar um arquivo, ler uma fatura,
+    organizar um documento, consultar um compromisso.
+  </p>
+
+  <h2>Armazenamento</h2>
+  <p>
+    Nenhum conteúdo é armazenado pelo aplicativo. A única coisa gravada em disco é o token de
+    autenticação do Google, guardado localmente em <code>~/.google-mcp/</code>, no meu computador,
+    para não precisar autorizar a cada uso. Não existe banco de dados, servidor ou backup em nuvem.
+  </p>
+
+  <h2>Compartilhamento</h2>
+  <p>
+    Nenhum. Os dados não são vendidos, transferidos, enviados a terceiros nem usados para treinar
+    modelo algum.
+  </p>
+
+  <h2>Revogação</h2>
+  <p>
+    O acesso pode ser retirado a qualquer momento em
+    <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.
+    Ao revogar, o token local deixa de funcionar imediatamente.
+  </p>
+
+  <h2>Contato</h2>
+  <p><a href="mailto:adlensilva4@gmail.com">adlensilva4@gmail.com</a></p>
+
+  <div class="en">
+    <h2>English summary</h2>
+    <p>
+      This is a single-user personal application. It is operated only by its developer, on his own
+      Google account. With his consent, it reads and edits his own Google Drive files, Gmail
+      messages and Calendar events, on his local machine.
+    </p>
+    <p>
+      No data is collected from other people, stored on any server, shared with third parties, sold,
+      or used to train any model. The only thing written to disk is the OAuth token, kept locally at
+      <code>~/.google-mcp/</code>. Access can be revoked at any time at
+      <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.
+    </p>
+    <p>Contact: <a href="mailto:adlensilva4@gmail.com">adlensilva4@gmail.com</a></p>
+  </div>
+
+  <footer>
+    <a href="index.html">Voltar</a> · Adlem Laurindo
+  </footer>
+</main>
+</body>
+</html>

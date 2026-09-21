@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MCP Pessoal — Adlem Laurindo</title>
+<style>
+  :root {
+    --bg: #ffffff; --fg: #1a1a1a; --muted: #5c5c5c;
+    --line: #e4e4e4; --accent: #1a1a1a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #111213; --fg: #e8e8e8; --muted: #9a9a9a; --line: #2a2b2d; --accent: #e8e8e8; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    padding: 0 16px;
+  }
+  main { max-width: 640px; margin: 0 auto; padding: 72px 0 96px; }
+  h1 { font-size: 30px; line-height: 1.2; margin: 0 0 8px; letter-spacing: -0.02em; }
+  .sub { color: var(--muted); margin: 0 0 40px; }
+  h2 { font-size: 18px; margin: 40px 0 12px; letter-spacing: -0.01em; }
+  p { margin: 0 0 14px; }
+  ul { margin: 0 0 14px; padding-left: 20px; }
+  li { margin-bottom: 6px; }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  code {
+    font: 13px/1.5 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    background: var(--line); padding: 2px 6px; border-radius: 4px;
+  }
+  footer {
+    margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--line);
+    color: var(--muted); font-size: 14px;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>MCP Pessoal</h1>
+  <p class="sub">Ferramenta de uso próprio, de um único usuário.</p>
+
+  <h2>O que é</h2>
+  <p>
+    Uma integração que liga meu assistente de código local à minha própria conta Google,
+    para ler e organizar arquivos do meu Drive e mensagens do meu Gmail enquanto trabalho.
+    Roda no meu computador, via <a href="https://modelcontextprotocol.io">Model Context Protocol</a>.
+  </p>
+
+  <h2>Quem usa</h2>
+  <p>
+    Só eu, Adlem Laurindo, na conta <code>adlensilva4@gmail.com</code>.
+    Não há cadastro, não há outros usuários e o aplicativo não é distribuído.
+  </p>
+
+  <h2>O que ele acessa</h2>
+  <ul>
+    <li>Arquivos do meu Google Drive (leitura e edição de documentos e planilhas meus)</li>
+    <li>Mensagens do meu Gmail (leitura, para consultar recibos e faturas)</li>
+    <li>Meu Google Agenda, para ver e criar eventos meus</li>
+  </ul>
+
+  <h2>Onde os dados ficam</h2>
+  <p>
+    Na minha máquina. Não existe servidor, banco de dados nem terceiro envolvido:
+    o programa fala direto com a API do Google a partir do meu computador.
+  </p>
+
+  <p><a href="privacy.html">Política de privacidade</a></p>
+
+  <footer>
+    Adlem Laurindo · <a href="mailto:adlensilva4@gmail.com">adlensilva4@gmail.com</a><br>
+    Atualizado em 21 de setembro de 2026.
+  </footer>
+</main>
+</body>
+</html>
